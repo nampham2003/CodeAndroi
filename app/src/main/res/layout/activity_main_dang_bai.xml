@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f0f0f0"
+    tools:context=".Main_DangBai"
+    android:orientation="vertical">
+
+    <!-- Thanh tìm kiếm -->
+    <EditText
+        android:id="@+id/timkiemMT"
+        android:hint="Search..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:textColorHint="#888888"
+        android:elevation="4dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Danh sách kết quả tìm kiếm -->
+    <ListView
+        android:id="@+id/listviewtimkiemMT"
+        android:layout_width="match_parent"
+        android:layout_height="397dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnThemTruyenMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Truyên Mới" />
+
+</LinearLayout>

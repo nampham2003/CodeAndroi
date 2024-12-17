@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".Main_ThemTruyen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Thêm truyện"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="Nhập ID truyện"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_face" />
+
+    <EditText
+        android:id="@+id/edTentruyen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập tên truyện"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_post" />
+
+    <EditText
+        android:id="@+id/edNoidungsoluoc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập nội dung"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_book" />
+
+    <EditText
+        android:id="@+id/edTacgia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập tác giả"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_face" />
+
+    <EditText
+        android:id="@+id/edAnh"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập ảnh"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_picture" />
+
+    <EditText
+        android:id="@+id/edTrangthai"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập trạng thái"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_status" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnadd_them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+    </LinearLayout>
+
+</LinearLayout>

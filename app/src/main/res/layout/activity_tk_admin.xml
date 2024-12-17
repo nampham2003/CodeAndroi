@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:padding="16dp"
+    tools:context=".TK_Admin">
+
+    <!-- Header with Icon and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/textviewthongtin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Tài Khoản Admin"
+            android:textColor="#00BCD4"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Divider Line for Visual Separation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Admin Information -->
+    <TextView
+        android:id="@+id/text_TenAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Tài Khoản"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_PassAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Text_GmailAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gmail"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <!-- Header for Customer Management -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/textviewthongtinKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Tài Khoản Khách Hàng"
+            android:textColor="#00BCD4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Divider Line for Visual Separation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Customer Account List -->
+    <ListView
+        android:id="@+id/listtk"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <!-- Add User Button -->
+    <Button
+        android:id="@+id/btnadd_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Thêm tài khoản"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/anhnen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/anhnen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TruyệnChữ"
+        tools:targetApi="31">
+        <activity
+            android:name=".Main_suaadmin"
+            android:exported="false" />
+        <activity
+            android:name=".Main_suakhach"
+            android:exported="false" />
+        <activity
+            android:name=".TK_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".TK_Khach"
+            android:exported="false" />
+        <activity
+            android:name=".Main_SuaBai"
+            android:exported="false" />
+        <activity
+            android:name=".Main_DangBai"
+            android:exported="false" />
+        <activity
+            android:name=".Main_ThemChapter"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinAPP"
+            android:exported="false" />
+        <activity
+            android:name=".TimKiemTruyen"
+            android:exported="false" />
+        <activity
+            android:name=".NoiDungTruyen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DangKy"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main_ThemTruyen"
+            android:exported="false" />
+    </application>
+
+</manifest>

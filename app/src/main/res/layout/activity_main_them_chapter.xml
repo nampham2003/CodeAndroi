@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".Main_ThemChapter">
+
+    <ListView
+        android:id="@+id/listviewChapter"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray"/>
+    <EditText
+        android:id="@+id/edChapTer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_post"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:hint="Chapter"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edNoiDungChapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_book"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:hint="Nội Dung Chapter"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_addchapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:text="Thêm Chapter"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

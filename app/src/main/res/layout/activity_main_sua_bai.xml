@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_SuaBai">
+
+
+    <!-- Tên Truyện -->
+    <EditText
+        android:id="@+id/edittentruyen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên Truyện"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="50dp" />
+
+    <!-- Nội dung -->
+    <EditText
+        android:id="@+id/editnoidung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edittentruyen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Tác giả -->
+    <EditText
+        android:id="@+id/edittacgia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tác giả"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editnoidung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Ảnh -->
+    <EditText
+        android:id="@+id/editanh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ảnh"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edittacgia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Trạng thái -->
+    <EditText
+        android:id="@+id/edittrangthai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Trạng thái"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editanh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Button Sửa -->
+    <Button
+        android:id="@+id/btnsua_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        app:layout_constraintTop_toBottomOf="@id/edittrangthai"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp" />
+
+    <!-- Button Huỷ -->
+    <Button
+        android:id="@+id/btnhuy_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        app:layout_constraintTop_toBottomOf="@id/edittrangthai"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="Sửa truyện"
+        app:layout_constraintBottom_toTopOf="@+id/edittentruyen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
